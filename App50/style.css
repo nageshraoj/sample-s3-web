@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  overflow: hidden;
+  text-align: center;
+  background-color: #516345;
+  color: #fff;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen:not(.active) {
+  display: none;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 1rem 2rem;
+  background-color: rgb(83, 125, 145);
+  color: #eee;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.insert-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.insert {
+  margin: 10px;
+  list-style-type: none;
+  border: none;
+}
+
+.choose-insert {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: cadetblue;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.choose-insert:hover {
+  outline: none;
+  background-color: #eee;
+  /* opacity: 0.9; */
+  /* transform: rotateZ(360deg) scale(1.2); */
+}
+
+.choose-insert:active {
+  transform: scale(0.98);
+}
+
+.choose-insert p {
+  width: 100%;
+}
+
+.insert-img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.screen.game-container {
+  position: relative;
+}
+
+#time {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#message {
+  opacity: 0;
+}
+
+.play-again-btn {
+  margin-top: 20px;
+  padding: 1rem 2rem;
+  background-color: rgb(83, 125, 145);
+  color: #eee;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.play-again-btn:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.play-again-btn:active {
+  transform: scale(0.98);
+}
+
+.insertImg {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}

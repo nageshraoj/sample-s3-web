@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="screen active">
+        <h1>What to kill inserts?</h1>
+        <button class="btn">Click to start</button>
+    </div>
+
+    <div class="screen">
+        <h1>Select the insect which you want to kill?</h1>
+        <ul class="insert-list">
+            <li class="insert">
+                <button class="choose-insert">
+                    <p>Fly</p>
+                    <img class="insert-img" src="./img/fly.png" alt="fly">
+                </button>
+            </li>
+            <li class="insert">
+                <button class="choose-insert">
+                    <p>Mosquito</p>
+                    <img class="insert-img" src="./img/mosquito.png" alt="mosquito">
+                </button>
+            </li>
+            <li class="insert">
+                <button class="choose-insert">
+                    <p>Cockroach</p>
+                    <img class="insert-img" src="./img/cockroach.png" alt="cockroach">
+                </button>
+            </li>
+
+            <li class="insert">
+                <button class="choose-insert">
+                    <p>Ant</p>
+                    <img class="insert-img" src="./img/ant.png" alt="ant">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game-container">
+        <h3 id="time">Time : 00:00</h3>
+        <h3 id="score">Score : 0</h3>
+        <div id="message">
+            <p>Are you annoyed? <br /> You are playing an impossible game!!</p>
+            <button class="play-again-btn">Want to play again</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
